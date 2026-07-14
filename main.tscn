@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b83o3q3ciqxv4"]
+
+[ext_resource type="Texture2D" uid="uid://oqhly8qlv3jt" path="res://assets/mcp-img-1779958974180.png" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://beyeq37qyobrm" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dg7qq3ewydlwa" path="res://friend.tscn" id="3_h2yge"]
+
+[node name="Node2D" type="Node2D" unique_id=2038846419]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=637459849]
+position = Vector2(575.5, 317.00003)
+scale = Vector2(0.8772867, 0.8137254)
+texture = ExtResource("1_0xm2m")
+
+[node name="CharacterBody2D" parent="." unique_id=1249732984 instance=ExtResource("1_ig7tw")]
+position = Vector2(-11, 42)
+
+[node name="CharacterBody2D2" parent="." unique_id=473841573 instance=ExtResource("3_h2yge")]
+position = Vector2(2, -69)
